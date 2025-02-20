@@ -1,0 +1,1 @@
+export const ONE_SECOND_BEFORE_GO_LOGIN_PAGE = 1 * 1000
