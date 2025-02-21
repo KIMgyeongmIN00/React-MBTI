@@ -1,22 +1,77 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { login } from "../api/auth";
+import { useEffect } from "react";
 import useAuthStore from "../utils/auth/useAuthStore";
+import Swal from "sweetalert2";
 
 export default function Login() {
-  const login = useAuthStore((state) => state.login);
+  const { accessToken, saveAccessToken } = useAuthStore();
+  const [loginObj, setLoginObj] = useState({ id: "", password: "" });
   const location = useLocation();
   const navigate = useNavigate();
 
-  function handleLogin() {
-    login(); // Zustand의 인증 상태 변경
+  useEffect(() => {
+    console.log(loginObj);
+    console.log(accessToken);
+  }, [loginObj]);
 
-    const redirectTo = location.state?.from?.pathname || "/";
-    navigate(redirectTo, { replace: true });
+  async function onSubmitLoginHandler(loginObj) {
+    // 리팩토링
+    try {
+      const { accessToken, nickname } = await login(loginObj);
+      saveAccessToken(accessToken);
+      Swal.fire({
+        title: "환영합니다!",
+        text: `${nickname}님 어서오세요!`,
+        icon: "success",
+      });
+      const redirectTo = location.state?.from?.pathname || "/";
+      navigate(redirectTo, { replace: true });
+    } catch (error) {
+      Swal.fire({
+        title: "로그인 실패",
+        text: `다시 시도 하세요`,
+        icon: "error",
+      });
+    }
   }
 
   return (
-    <div>
-      <h2>로그인 페이지</h2>
-      <button onClick={handleLogin}>로그인 버튼</button>
-    </div>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSubmitLoginHandler(loginObj);
+      }}
+    >
+      <p>아이디 :</p>
+      <input
+        className="border-4"
+        type="text"
+        onChange={(e) => {
+          setLoginObj({ ...loginObj, id: e.target.value });
+        }}
+      />
+      <p>비밀번호 :</p>
+      <input
+        className="border-4"
+        type="text"
+        onChange={(e) => {
+          setLoginObj({ ...loginObj, password: e.target.value });
+        }}
+      />
+      <br />
+      <button className="border-8 border-black" type="submit">
+        로그인 버튼
+      </button>
+      <br />
+      <button
+        onClick={() => {
+          navigate("/signup");
+        }}
+      >
+        회원가입하기
+      </button>
+    </form>
   );
 }

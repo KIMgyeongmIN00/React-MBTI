@@ -2,10 +2,10 @@ import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import useAuthStore from "../utils/auth/useAuthStore";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
-import { ONE_SECOND_BEFORE_GO_LOGIN_PAGE } from "../data/magic-numbers";
+import { ONE_SECOND_BEFORE_GO_LOGIN_PAGE } from "../data/magicNumbers";
 
 export default function ProtectedRouter() {
-  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
+  const { isAuthenticated } = useAuthStore();
   const location = useLocation();
   const navigate = useNavigate();
 
