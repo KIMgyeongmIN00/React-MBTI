@@ -6,24 +6,21 @@ import useAuthStore from "../utils/auth/useAuthStore";
 import Swal from "sweetalert2";
 
 export default function Login() {
-  const { accessToken, saveAccessToken } = useAuthStore();
+  const { saveUserInfomation } = useAuthStore();
   const [loginObj, setLoginObj] = useState({ id: "", password: "" });
   const location = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log(loginObj);
-    console.log(accessToken);
-  }, [loginObj]);
+  useEffect(() => {}, []);
 
   async function onSubmitLoginHandler(loginObj) {
-    // 리팩토링
+    // 리팩토링 예정
     try {
-      const { accessToken, nickname } = await login(loginObj);
-      saveAccessToken(accessToken);
+      const user = await login(loginObj);
+      saveUserInfomation(user);
       Swal.fire({
         title: "환영합니다!",
-        text: `${nickname}님 어서오세요!`,
+        text: `${user.nickname}님 어서오세요!`,
         icon: "success",
       });
       const redirectTo = location.state?.from?.pathname || "/";
