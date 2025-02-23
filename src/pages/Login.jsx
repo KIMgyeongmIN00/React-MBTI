@@ -20,7 +20,7 @@ export default function Login() {
       saveUserInfomation(response);
       Swal.fire({
         title: "환영합니다!",
-        text: `${user.nickname}님 어서오세요!`,
+        text: `${response.nickname}님 어서오세요!`,
         icon: "success",
       });
       const redirectTo = location.state?.from?.pathname || "/";

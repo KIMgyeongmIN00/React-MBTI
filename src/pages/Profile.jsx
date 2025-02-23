@@ -1,3 +1,4 @@
+import useAuthStore from "../utils/auth/useAuthStore";
 import {
   getTestResults,
   getFilterdResults,
@@ -5,8 +6,11 @@ import {
   deleteTestResult,
   updateTestResultVisibility,
 } from "../utils/jsonAPI";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Profile() {
+  const { user } = useAuthStore();
+
   async function handleCallResults() {
     const response = await getTestResults("resultsTable");
     console.log(response);
@@ -17,10 +21,10 @@ export default function Profile() {
     );
     console.log(filterdResponse);
     const create = await createTestResult("resultsTable", {
-      id: "11",
-      title: "내가 임의적으로 만든거",
-      views: 333,
-      test: "ehlsk",
+      id: uuidv4(),
+      title: "MBTI",
+      test: user,
+      time: new Date().toLocaleString("ko-KR"),
     });
     console.log(create);
   }

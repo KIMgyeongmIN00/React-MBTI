@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import mbti from "../data/mbtiList";
 // import ResultCard from "../components/commons/ResultCard";
 
 export default function Home() {
@@ -6,42 +7,39 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-4 max-w-2xl">
-      <div className="mb-8 border-[1px] border-black">
-        <div>
-          <h1 className="text-2xl text-center">MBTI 성격유형 검사</h1>
-        </div>
-        <div className="flex flex-col items-center">
-          <p className="text-center mb-6 text-muted-foreground">
+      <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold text-center mb-2">
+            MBTI 성격유형 검사
+          </h1>
+          <p className="text-center text-gray-500">
             20가지 질문을 통해 나의 MBTI 성격유형을 알아보세요!
           </p>
+        </div>
+        <div className="flex flex-col items-center">
           <button
-            size="lg"
-            className="w-full border-black border-[2px] max-w-xs"
-            onClick={() => navigate("/mbti")}
+            onClick={() => {
+              navigate("/mbti");
+            }}
+            className="w-full max-w-xs bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
           >
             검사 시작하기
           </button>
         </div>
       </div>
 
-      <div>
-        <h2 className="text-start text-xl font-semibold mb-4">
-          이전 검사 결과
-        </h2>
-        {/* {서버에서 받아온 내 검사 내역 > 0 ? (
-          history.map((item, index) => (
-            <ResultCard
-              key={index}
-              result={item.result}
-              date={item.date}
-              description={item.description}
-            />
-          ))
-        ) : ( */}
-        <div className="border-[1px] border-black p-8">
-          <p className="text-center text-muted-foreground">
-            검사 내역이 없습니다
-          </p>
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold">MBTI 유형</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 break-keep">
+          {mbti.map(({ type, description }) => (
+            <div
+              key={type}
+              className="bg-white rounded-lg shadow-sm p-4 hover:bg-gray-50 transition-colors cursor-pointer border"
+            >
+              <h3 className="font-semibold mb-1">{type}</h3>
+              <p className="text-xs text-gray-500">{description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
