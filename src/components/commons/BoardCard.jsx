@@ -1,11 +1,11 @@
 import { Calendar, User2 } from "lucide-react";
 import useAuthStore from "../../utils/auth/useAuthStore";
 import Toggle from "./Toggle";
-import { updateTestResultPublic } from "../../utils/jsonAPI";
-import Swal from "sweetalert2";
+import { useTogglePublic } from "../../utils/hooks/useTogglePublic";
 
-export default function BoardCard({ data, writeUser, onDelete }) {
-  const { user } = useAuthStore();
+export default function BoardCard({ data, writeUser, onDelete, canToggle }) {
+  const { user, isAuthenticated } = useAuthStore();
+  const { togglePublic } = useTogglePublic();
 
   // MBTI 유형별 색상 매핑
   const getTypeColor = (mbti) => {
@@ -21,28 +21,6 @@ export default function BoardCard({ data, writeUser, onDelete }) {
     };
     return colors[mbti] || "bg-gray-100 text-gray-800";
   };
-
-  async function onPublicOn(id) {
-    const response = await updateTestResultPublic("resultsTable", id, {
-      onPublic: true,
-    });
-    Swal.fire({
-      title: "공개 되었습니다!",
-      text: "이 검사 결과를 공개하였습니다!",
-      icon: "success",
-    });
-  }
-
-  async function onPublicOff(id) {
-    const response = await updateTestResultPublic("resultsTable", id, {
-      onPublic: false,
-    });
-    Swal.fire({
-      title: "비공개 되었습니다!",
-      text: "이 검사 결과를 비공개하였습니다!",
-      icon: "success",
-    });
-  }
 
   return (
     <div className="w-full bg-white rounded-lg shadow-md">
@@ -70,15 +48,9 @@ export default function BoardCard({ data, writeUser, onDelete }) {
             <User2 className="h-5 w-5 text-muted-foreground" />
             <h3 className="font-semibold text-lg">{writeUser.userId}</h3>
           </div>
-          {writeUser.userId === user.userId && (
+          {isAuthenticated && writeUser.userId === user.userId && (
             <div className="text-sm text-red-500 hover:text-red-700 transition-colors">
-              <button
-                onClick={() => {
-                  onDelete(data.id);
-                }}
-              >
-                삭제
-              </button>
+              <button onClick={() => onDelete(data.id)}>삭제</button>
             </div>
           )}
         </div>
@@ -90,18 +62,12 @@ export default function BoardCard({ data, writeUser, onDelete }) {
         </p>
       </div>
 
-      {writeUser.userId === user.userId && (
+      {isAuthenticated && writeUser.userId === user.userId && canToggle && (
         <div className="flex p-2 gap-2 justify-end">
           <span className="text-sm text-gray-500">비공개</span>
           <Toggle
             defaultChecked={data.onPublic}
-            onToggle={(isChecked) => {
-              if (isChecked) {
-                onPublicOn(data.id);
-              } else {
-                onPublicOff(data.id);
-              }
-            }}
+            onToggle={(isChecked) => togglePublic(data.id, isChecked)}
             size="small"
           />
           <span className="text-sm text-gray-500">공개</span>

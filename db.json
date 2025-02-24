@@ -1,31 +1,101 @@
 {
   "resultsTable": [
     {
-      "id": "e60efe4b-4162-478b-8b47-3965a1fe0beb",
-      "mbti": "ENTP",
+      "id": "cea64313-cc4a-413e-85a1-a5ae5dd0aa23",
+      "mbti": "INFP",
       "user": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzNTgzMzksImV4cCI6MTc0MDM2MTkzOX0.-KrJq2KYC7AmlDY8q1fK6C4NN0DaKXxyFFocfJEdiLA",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzODM1MTQsImV4cCI6MTc0MDM4NzExNH0.rtu2QWNTj-gEQSuDuo-y4Y7PBAS5EaxQSkEJEUKFcS4",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오후 3:32:22",
-      "description": "지적 도전을 즐기는 영리하고 호기심이 많은 사색가! ENTP은 두뇌 회전이 빠르고 대담한 성격으로 현재 상황에 이의를 제기하는 데 거리낌이 없는 사람들입니다. 이들은 어떤 의견이나 사람에 반대하는 일을 두려워하지 않으며, 논란이 될 만한 주제에 대해 격렬하게 논쟁하는 일을 즐기고 있어요. 그렇다고 반론을 제기하는 데만 관심이 있거나 악의를 지닌 것은 아니랍니다. ENTP는 사실 지식이 풍부하고 호기심이 넘치며 활기찬 유머 감각으로 다른 사람들을 즐겁게 할 수 있는 성격이랍니다.",
+      "time": "2025. 2. 24. 오후 7:56:19",
+      "description": "현실에서 방황하는 시인! INFP는 세상의 아름다움과 인간의 감정에 대해 깊이 생각하는 사람들입니다. 이들은 항상 자신의 마음속에서 새로운 시나 시를 짓고 있으며, 세상의 모든 슬픔과 기쁨을 시적으로 표현하고 싶어해요. 하지만 가끔은 현실과 약간 동떨어진 곳에 머무를 때가 있어서 '지금 내가 이걸 왜 하고 있지?'라고 스스로에게 묻곤 해요. 그럼에도 불구하고 이들은 정말 따뜻한 마음을 가진 친구들이에요.",
+      "onPublic": true
+    },
+    {
+      "id": "bcd2ca19-89bd-45e8-8b1b-fcfd5ee98329",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAxNDEsImV4cCI6MTc0MDQwMzc0MX0.KCGvDU6xbJ2RD2VLsWvmpk32fHJmGjbEibBcGE3yWXc",
+        "userId": "테스트2002",
+        "success": true,
+        "avatar": null,
+        "nickname": "테스트계정"
+      },
+      "time": "2025. 2. 24. 오후 9:29:14",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
       "onPublic": false
     },
     {
-      "id": "3b78dec8-1152-478d-a423-1897468498a6",
-      "mbti": "ENTP",
+      "id": "5dba4908-fbca-42eb-a94f-ec87aafad474",
+      "mbti": "ESTJ",
       "user": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzNTgzMzksImV4cCI6MTc0MDM2MTkzOX0.-KrJq2KYC7AmlDY8q1fK6C4NN0DaKXxyFFocfJEdiLA",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAxNDEsImV4cCI6MTc0MDQwMzc0MX0.KCGvDU6xbJ2RD2VLsWvmpk32fHJmGjbEibBcGE3yWXc",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오후 3:32:22",
-      "description": "지적 도전을 즐기는 영리하고 호기심이 많은 사색가! ENTP은 두뇌 회전이 빠르고 대담한 성격으로 현재 상황에 이의를 제기하는 데 거리낌이 없는 사람들입니다. 이들은 어떤 의견이나 사람에 반대하는 일을 두려워하지 않으며, 논란이 될 만한 주제에 대해 격렬하게 논쟁하는 일을 즐기고 있어요. 그렇다고 반론을 제기하는 데만 관심이 있거나 악의를 지닌 것은 아니랍니다. ENTP는 사실 지식이 풍부하고 호기심이 넘치며 활기찬 유머 감각으로 다른 사람들을 즐겁게 할 수 있는 성격이랍니다.",
+      "time": "2025. 2. 24. 오후 9:29:14",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": true
+    },
+    {
+      "id": "8915c5fc-e85c-4129-9fef-8f723be5761f",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
+        "userId": "테스트2002",
+        "success": true,
+        "avatar": null,
+        "nickname": "테스트계정"
+      },
+      "time": "2025. 2. 24. 오후 10:14:05",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": false
+    },
+    {
+      "id": "3b8391b9-a22e-43f0-a265-7dba49d40e25",
+      "mbti": "ESFP",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
+        "userId": "테스트2002",
+        "success": true,
+        "avatar": null,
+        "nickname": "테스트계정"
+      },
+      "time": "2025. 2. 24. 오후 10:14:38",
+      "description": "인생은 무대, 내가 바로 주인공! ESFP는 주목받는 것을 좋아하고, 항상 재미있는 것을 찾는 사람들입니다. 이들은 파티에서 춤추며 모든 이목을 집중시키거나, 친구들을 웃기기 위해 온갖 재밌는 이야기를 풀어놓아요. 하지만 가끔은 너무 즉흥적이라서 '내가 어제 뭐 했더라?'라고 스스로에게 물어볼 때가 있을지도 몰라요. 그럼에도 불구하고 이들은 언제나 주변 사람들에게 행복을 주는 에너자이저랍니다.",
+      "onPublic": false
+    },
+    {
+      "id": "dd0deecd-5eba-4734-8aaa-9d5328505c36",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
+        "userId": "테스트2002",
+        "success": true,
+        "avatar": null,
+        "nickname": "테스트계정"
+      },
+      "time": "2025. 2. 24. 오후 10:14:57",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": false
+    },
+    {
+      "id": "262defe4-be0b-4af6-b644-e44b505d9869",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
+        "userId": "테스트2002",
+        "success": true,
+        "avatar": null,
+        "nickname": "테스트계정"
+      },
+      "time": "2025. 2. 24. 오후 10:16:26",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
       "onPublic": false
     }
   ]
