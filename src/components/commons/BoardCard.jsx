@@ -20,14 +20,14 @@ export default function BoardCard({ description, mbti, writeUser, time }) {
   };
 
   return (
-    <div className="w-full p-4 border-2">
-      <div className="space-y-4">
+    <div className="w-full bg-white rounded-lg shadow-md">
+      <div className="p-6 space-y-4">
         <div className="flex justify-between items-start">
           <div className="flex gap-1">
             {mbti.split("").map((mbti, index) => (
               <span
                 key={index}
-                className={`w-8 p-2 rounded-full text-sm font-semibold ${getTypeColor(
+                className={`px-2 py-1 rounded-md text-sm font-semibold ${getTypeColor(
                   mbti
                 )}`}
               >
@@ -46,10 +46,8 @@ export default function BoardCard({ description, mbti, writeUser, time }) {
             <h3 className="font-semibold text-lg">{mbti} 유형</h3>
           </div>
           {writeUser.userId === user.userId && (
-            <div className="gap-2">
-              <button className="border-2 text-sm text-red-500 hover:text-red-700 transition-colors">
-                삭제
-              </button>
+            <div className="text-sm text-red-500 hover:text-red-700 transition-colors">
+              <button>삭제</button>
             </div>
           )}
         </div>
