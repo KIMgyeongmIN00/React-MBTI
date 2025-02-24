@@ -24,7 +24,7 @@ export default function ProtectedRouter() {
     }
   }, [isAuthenticated, navigate, location]);
 
-  if (!isAuthenticated) return <div>로그인 페이지로 돌아갑니다.</div>; // 잠시 알람 창 뒤로 비쳐질 내용
+  if (!isAuthenticated) return <div>로그인 페이지로 돌아갑니다.</div>;
 
-  return <Outlet />; // 인증된 경우 자식 라우트 렌더링
+  return <Outlet />;
 }

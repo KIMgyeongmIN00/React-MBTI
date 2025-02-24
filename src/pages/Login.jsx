@@ -16,11 +16,11 @@ export default function Login() {
   async function onSubmitLoginHandler(loginObj) {
     // 리팩토링 예정
     try {
-      const user = await login(loginObj);
-      saveUserInfomation(user);
+      const response = await login(loginObj);
+      saveUserInfomation(response);
       Swal.fire({
         title: "환영합니다!",
-        text: `${user.nickname}님 어서오세요!`,
+        text: `${response.nickname}님 어서오세요!`,
         icon: "success",
       });
       const redirectTo = location.state?.from?.pathname || "/";
