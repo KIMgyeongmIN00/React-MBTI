@@ -8,7 +8,7 @@ export default function ResultCard({ result, description, onReset }) {
     <div className="w-full max-w-2xl mx-auto">
       <div className="justify-center text-center text-4xl">
         <div className="justify-self-center">
-          {user.avatar ? user.avatar : <User size={150} />}
+          <User size={150} />
         </div>
         <p>{user.nickname}</p>
       </div>

@@ -22,7 +22,7 @@ export const deleteTestResult = async (table, id) => {
   return response;
 };
 
-export const updateTestResultVisibility = async (table, id, visibility) => {
+export const updateTestResultPublic = async (table, id, visibility) => {
   const response = await axios.patch(`${API_URL}/${table}/${id}`, visibility);
   return response;
 };

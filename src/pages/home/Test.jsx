@@ -28,10 +28,11 @@ export default function MBTITest() {
   async function whenMbtiTestEnd() {
     const dataToSave = {
       id: uuidv4(),
-      title: result,
-      test: user,
+      mbti: result,
+      user: user,
       time: new Date().toLocaleString("ko-KR"),
       description: mbtiDescriptions[result],
+      onPublic: true,
     };
     const response = await createTestResult("resultsTable", dataToSave);
     console.log(response);
