@@ -35,12 +35,6 @@ export default function QuestionCard({
                     : question.type.split("/")[1],
                   question.type
                 );
-                console.log(
-                  index === 0
-                    ? question.type.split("/")[0]
-                    : question.type.split("/")[1],
-                  question.type
-                );
               }}
             >
               {option}

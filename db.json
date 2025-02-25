@@ -1,121 +1,102 @@
 {
   "resultsTable": [
     {
-      "id": "f59cdeca-0333-4ea1-bef6-31792638e819",
-      "title": "ESTJ",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
-        "userId": "",
-        "success": true,
-        "avatar": null,
-        "nickname": "테스트계정"
-      },
-      "time": "2025. 2. 23. 오후 9:18:56",
-      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요."
-    },
-    {
-      "id": "88bc0d95-6b93-40b0-910a-ab8d78b82221",
-      "title": "ESTJ",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
+      "id": "cea64313-cc4a-413e-85a1-a5ae5dd0aa23",
+      "mbti": "INFP",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzODM1MTQsImV4cCI6MTc0MDM4NzExNH0.rtu2QWNTj-gEQSuDuo-y4Y7PBAS5EaxQSkEJEUKFcS4",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 23. 오후 9:18:56",
-      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요."
+      "time": "2025. 2. 24. 오후 7:56:19",
+      "description": "현실에서 방황하는 시인! INFP는 세상의 아름다움과 인간의 감정에 대해 깊이 생각하는 사람들입니다. 이들은 항상 자신의 마음속에서 새로운 시나 시를 짓고 있으며, 세상의 모든 슬픔과 기쁨을 시적으로 표현하고 싶어해요. 하지만 가끔은 현실과 약간 동떨어진 곳에 머무를 때가 있어서 '지금 내가 이걸 왜 하고 있지?'라고 스스로에게 묻곤 해요. 그럼에도 불구하고 이들은 정말 따뜻한 마음을 가진 친구들이에요.",
+      "onPublic": true
     },
     {
-      "id": "528e38ff-0870-490d-8f6c-7f2c3092ac57",
-      "title": "ESTJ",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
+      "id": "bcd2ca19-89bd-45e8-8b1b-fcfd5ee98329",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAxNDEsImV4cCI6MTc0MDQwMzc0MX0.KCGvDU6xbJ2RD2VLsWvmpk32fHJmGjbEibBcGE3yWXc",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오전 9:40:40",
-      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요."
+      "time": "2025. 2. 24. 오후 9:29:14",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": false
     },
     {
-      "id": "fb16f771-286f-471a-a998-9c62ef01e298",
-      "title": "ESTJ",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
+      "id": "5dba4908-fbca-42eb-a94f-ec87aafad474",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAxNDEsImV4cCI6MTc0MDQwMzc0MX0.KCGvDU6xbJ2RD2VLsWvmpk32fHJmGjbEibBcGE3yWXc",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오전 9:40:40",
-      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요."
+      "time": "2025. 2. 24. 오후 9:29:14",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": true
     },
     {
-      "id": "37e6a5b8-7208-4241-90c9-173058b03c8a",
-      "title": "ESTJ",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
+      "id": "8915c5fc-e85c-4129-9fef-8f723be5761f",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오전 9:46:11",
-      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요."
+      "time": "2025. 2. 24. 오후 10:14:05",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": false
     },
     {
-      "id": "748b042a-441e-4b37-b5d7-05ee3be91842",
-      "title": "ESTJ",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
+      "id": "3b8391b9-a22e-43f0-a265-7dba49d40e25",
+      "mbti": "ESFP",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오전 9:46:11",
-      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요."
+      "time": "2025. 2. 24. 오후 10:14:38",
+      "description": "인생은 무대, 내가 바로 주인공! ESFP는 주목받는 것을 좋아하고, 항상 재미있는 것을 찾는 사람들입니다. 이들은 파티에서 춤추며 모든 이목을 집중시키거나, 친구들을 웃기기 위해 온갖 재밌는 이야기를 풀어놓아요. 하지만 가끔은 너무 즉흥적이라서 '내가 어제 뭐 했더라?'라고 스스로에게 물어볼 때가 있을지도 몰라요. 그럼에도 불구하고 이들은 언제나 주변 사람들에게 행복을 주는 에너자이저랍니다.",
+      "onPublic": false
     },
     {
-      "id": "6531ca09-1d3a-4563-8f4c-75aa900cfb0c",
-      "title": "INFP",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
+      "id": "dd0deecd-5eba-4734-8aaa-9d5328505c36",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오전 9:46:34",
-      "description": "현실에서 방황하는 시인! INFP는 세상의 아름다움과 인간의 감정에 대해 깊이 생각하는 사람들입니다. 이들은 항상 자신의 마음속에서 새로운 시나 시를 짓고 있으며, 세상의 모든 슬픔과 기쁨을 시적으로 표현하고 싶어해요. 하지만 가끔은 현실과 약간 동떨어진 곳에 머무를 때가 있어서 '지금 내가 이걸 왜 하고 있지?'라고 스스로에게 묻곤 해요. 그럼에도 불구하고 이들은 정말 따뜻한 마음을 가진 친구들이에요."
+      "time": "2025. 2. 24. 오후 10:14:57",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": false
     },
     {
-      "id": "0be29ff4-d378-44c8-8eff-51b8a4851aeb",
-      "title": "INFP",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
+      "id": "262defe4-be0b-4af6-b644-e44b505d9869",
+      "mbti": "ESTJ",
+      "user": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDA0MDAyMzksImV4cCI6MTc0MDQwMzgzOX0.hpgiaFbg8NnqLnqdrV_2DDNRRajUqaxEg8oVdqyfLV0",
         "userId": "테스트2002",
         "success": true,
         "avatar": null,
         "nickname": "테스트계정"
       },
-      "time": "2025. 2. 24. 오전 9:46:34",
-      "description": "현실에서 방황하는 시인! INFP는 세상의 아름다움과 인간의 감정에 대해 깊이 생각하는 사람들입니다. 이들은 항상 자신의 마음속에서 새로운 시나 시를 짓고 있으며, 세상의 모든 슬픔과 기쁨을 시적으로 표현하고 싶어해요. 하지만 가끔은 현실과 약간 동떨어진 곳에 머무를 때가 있어서 '지금 내가 이걸 왜 하고 있지?'라고 스스로에게 묻곤 해요. 그럼에도 불구하고 이들은 정말 따뜻한 마음을 가진 친구들이에요."
-    },
-    {
-      "id": "d516e085-46c2-4d48-bacd-580b76740e54",
-      "title": "ESTJ",
-      "test": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Iu2FjOyKpO2KuDIwMDIiLCJpYXQiOjE3NDAzMDc0NjUsImV4cCI6MTc0MDMxMTA2NX0.6kejvP6kGBImvzjQsMTQvHD4QJSh0VBF1yLBb33ZnqM",
-        "userId": "테스트2002",
-        "success": true,
-        "avatar": null,
-        "nickname": "테스트계정"
-      },
-      "time": "2025. 2. 24. 오전 9:46:54",
-      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요."
+      "time": "2025. 2. 24. 오후 10:16:26",
+      "description": "체계적인 지휘관! ESTJ는 모든 것을 계획하고 조직하는 능력이 탁월한 사람들입니다. 이들은 무엇이든 정확하게 처리하고 싶어하며, '제대로 된 절차가 있으면 모든 게 순조롭게 진행될 수 있어'라는 믿음을 가지고 있어요. 그러나 가끔은 너무 엄격해서 주변 사람들이 '조금만 느긋하게 지내면 안 될까?'라고 묻고 싶을 때가 있을지도 몰라요. 그래도 이들은 확실히 모든 일을 끝내고야 마는 성격이에요.",
+      "onPublic": false
     }
   ]
 }

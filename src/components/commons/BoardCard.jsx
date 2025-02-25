@@ -1,8 +1,11 @@
 import { Calendar, User2 } from "lucide-react";
 import useAuthStore from "../../utils/auth/useAuthStore";
+import Toggle from "./Toggle";
+import { useTogglePublic } from "../../utils/hooks/useTogglePublic";
 
-export default function BoardCard({ description, mbti, writeUser, time }) {
-  const { user } = useAuthStore();
+export default function BoardCard({ data, writeUser, onDelete, canToggle }) {
+  const { user, isAuthenticated } = useAuthStore();
+  const { togglePublic } = useTogglePublic();
 
   // MBTI 유형별 색상 매핑
   const getTypeColor = (mbti) => {
@@ -24,7 +27,7 @@ export default function BoardCard({ description, mbti, writeUser, time }) {
       <div className="p-6 space-y-4">
         <div className="flex justify-between items-start">
           <div className="flex gap-1">
-            {mbti.split("").map((mbti, index) => (
+            {data.mbti.split("").map((mbti, index) => (
               <span
                 key={index}
                 className={`px-2 py-1 rounded-md text-sm font-semibold ${getTypeColor(
@@ -37,17 +40,17 @@ export default function BoardCard({ description, mbti, writeUser, time }) {
           </div>
           <div className="flex items-center text-sm text-muted-foreground">
             <Calendar className="h-4 w-4 mr-1" />
-            {time}
+            {data.time}
           </div>
         </div>
         <div className="flex justify-between">
           <div className="flex items-center gap-2">
             <User2 className="h-5 w-5 text-muted-foreground" />
-            <h3 className="font-semibold text-lg">{mbti} 유형</h3>
+            <h3 className="font-semibold text-lg">{writeUser.userId}</h3>
           </div>
-          {writeUser.userId === user.userId && (
+          {isAuthenticated && writeUser.userId === user.userId && (
             <div className="text-sm text-red-500 hover:text-red-700 transition-colors">
-              <button>삭제</button>
+              <button onClick={() => onDelete(data.id)}>삭제</button>
             </div>
           )}
         </div>
@@ -55,9 +58,21 @@ export default function BoardCard({ description, mbti, writeUser, time }) {
 
       <div className="p-4 bg-white rounded-lg shadow transition-all duration-300 scrollbar-none max-h-24 overflow-hidden hover:max-h-[500px] hover:scrollbar-none">
         <p className="text-gray-700 break-keep leading-relaxed">
-          {description}
+          {data.description}
         </p>
       </div>
+
+      {isAuthenticated && writeUser.userId === user.userId && canToggle && (
+        <div className="flex p-2 gap-2 justify-end">
+          <span className="text-sm text-gray-500">비공개</span>
+          <Toggle
+            defaultChecked={data.onPublic}
+            onToggle={(isChecked) => togglePublic(data.id, isChecked)}
+            size="small"
+          />
+          <span className="text-sm text-gray-500">공개</span>
+        </div>
+      )}
     </div>
   );
 }
