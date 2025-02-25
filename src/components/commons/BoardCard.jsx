@@ -46,7 +46,10 @@ export default function BoardCard({ data, writeUser, onDelete, canToggle }) {
         <div className="flex justify-between">
           <div className="flex items-center gap-2">
             <User2 className="h-5 w-5 text-muted-foreground" />
-            <h3 className="font-semibold text-lg">{writeUser.userId}</h3>
+            <h3 className="font-semibold text-lg">{writeUser.nickname}</h3>
+            <span className="text-sm text-gray-500">
+              ({writeUser.userId.toString().replace(/.(?=.{3})/g, "*")})
+            </span>
           </div>
           {isAuthenticated && writeUser.userId === user.userId && (
             <div className="text-sm text-red-500 hover:text-red-700 transition-colors">

@@ -13,6 +13,7 @@ export default function Header() {
       title: "로그아웃 되었습니다!",
       text: `${user.nickname}님 안녕히 가세요!`,
       icon: "success",
+      confirmButtonColor: "#3085d6",
     }).then(() => {
       wasteUserInformation();
       navigate("/");

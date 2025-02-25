@@ -14,10 +14,12 @@ export const useDeleteMutation = () => {
     onSuccess: async () => {
       await queryClient.invalidateQueries({ queryKey: ["publicResults"] });
       await queryClient.invalidateQueries({ queryKey: ["myResults"] });
+      await queryClient.invalidateQueries({ queryKey: ["userResults"] });
       Swal.fire({
         title: "삭제 완료!",
         text: "항목이 삭제되었습니다.",
         icon: "success",
+        confirmButtonColor: "#3085d6",
       });
     },
     onError: async () => {
@@ -25,6 +27,7 @@ export const useDeleteMutation = () => {
         title: "삭제 실패!",
         text: "항목을 삭제하는 중 문제가 발생했습니다.",
         icon: "error",
+        confirmButtonColor: "#3085d6",
       });
     },
   });
@@ -48,6 +51,7 @@ export const useDeleteMutation = () => {
         title: "삭제 취소!",
         text: "항목 삭제를 취소하였습니다.",
         icon: "info",
+        confirmButtonColor: "#3085d6",
       });
     }
   };

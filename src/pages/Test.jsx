@@ -1,8 +1,8 @@
-import { questions } from "../../data/questions";
-import { mbtiDescriptions } from "../../utils/mbti/calculateMBTI";
-import { useMBTITest } from "../../utils/hooks/useSaveMbtiResults";
-import QuestionCard from "../../components/mbti-test/QuestionCard";
-import ResultCard from "../../components/mbti-test/ResultCard";
+import { questions } from "../data/questions";
+import { mbtiDescriptions } from "../utils/mbti/calculateMBTI";
+import { useMBTITest } from "../utils/hooks/useSaveMbtiResults";
+import QuestionCard from "../components/mbti-test/QuestionCard";
+import ResultCard from "../components/mbti-test/ResultCard";
 
 export default function MBTITest() {
   const { currentQuestion, result, handleAnswer, handleReset } = useMBTITest();

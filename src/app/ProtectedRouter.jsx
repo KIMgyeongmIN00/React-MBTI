@@ -16,6 +16,7 @@ export default function ProtectedRouter() {
         text: "로그인 후 이용해주세요.",
         icon: "warning",
         confirmButtonText: "확인",
+        confirmButtonColor: "#3085d6",
       }).then(
         setTimeout(() => {
           navigate("/login", { state: { from: location }, replace: true });
