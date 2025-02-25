@@ -10,7 +10,6 @@ export const useUserTestStats = () => {
     queryFn: async () => {
       return getFilterdResults("resultsTable", "user.userId", user.userId);
     },
-    staleTime: 1000 * 60 * 5, // 5분 동안 데이터 유지
   });
 
   // 검사 횟수 계산

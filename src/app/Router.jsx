@@ -4,8 +4,7 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Profile from "../pages/Profile";
 import ProtectedRouter from "./ProtectedRouter";
-import Test from "../pages/home/Test";
-import Result from "../pages/home/Result";
+import Test from "../pages/Test";
 import SiteLayout from "../components/layouts/SiteLayout";
 import Board from "../pages/Board";
 import Stats from "../pages/Stats";
@@ -39,10 +38,6 @@ export default function Router() {
             {
               path: "/mbti",
               element: <Test />,
-            },
-            {
-              path: "/result",
-              element: <Result />,
             },
             {
               path: "/profile",

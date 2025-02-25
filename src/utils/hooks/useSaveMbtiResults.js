@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
-import { v4 as uuidv4 } from "uuid";
 import useAuthStore from "../auth/useAuthStore";
 import { calculateMBTI, mbtiDescriptions } from "../mbti/calculateMBTI";
 import { createTestResult } from "../../api/jsonAPI";
@@ -16,7 +15,6 @@ export const useMBTITest = () => {
   const mutation = useMutation({
     mutationFn: async (mbtiResult) => {
       const dataToSave = {
-        id: uuidv4(),
         mbti: mbtiResult,
         user: user,
         time: new Date().toLocaleString("ko-KR"),
@@ -30,6 +28,7 @@ export const useMBTITest = () => {
         title: "수고하셨습니다.",
         text: "모든 검사를 마치셨습니다.",
         icon: "success",
+        confirmButtonColor: "#3085d6",
       })
     },
     onError: () => {
@@ -37,6 +36,7 @@ export const useMBTITest = () => {
         title: "죄송합니다.",
         text: "모종의 이유로 검사에 실패 하였습니다.",
         icon: "warning",
+        confirmButtonColor: "#3085d6",
       })
     },
   });

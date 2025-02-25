@@ -14,6 +14,7 @@ export const useTogglePublic = () => {
           ? "이 검사 결과를 공개하였습니다!"
           : "이 검사 결과를 비공개하였습니다!",
         icon: "success",
+        confirmButtonColor: "#3085d6",
       });
     },
     onError: () => {
@@ -21,6 +22,7 @@ export const useTogglePublic = () => {
         title: "오류 발생",
         text: "다시 시도해주세요!",
         icon: "error",
+        confirmButtonColor: "#3085d6",
       });
     },
   });

@@ -7,7 +7,7 @@ const useAuthStore = create(
       user: null,
       isAuthenticated: false,
 
-      saveUserInfomation: (user) => set({ user, isAuthenticated: !!user }),
+      saveUserInformation: (user) => set({ user, isAuthenticated: !!user }),
 
       wasteUserInformation: () => {
         set({ user: null, isAuthenticated: false });

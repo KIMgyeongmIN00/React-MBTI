@@ -1,16 +1,9 @@
-import { useState } from "react";
-import { register } from "../api/auth";
-import { useMutation } from "@tanstack/react-query";
 import Input from "../components/commons/Input";
 import Buttons from "../components/commons/Buttons";
+import { useRegister } from "../utils/hooks/useSignup";
 
 export default function SignUp() {
-  const [obj, setObj] = useState({ id: "", password: "", nickname: "" });
-
-  const mutation = useMutation({
-    mutationFn: register,
-    onSuccess: (data) => console.log(data),
-  });
+  const { regObj, setRegObj, handleRegister, isLoading } = useRegister();
 
   return (
     <div className="min-h-screen flex justify-center bg-gray-50">
@@ -25,25 +18,25 @@ export default function SignUp() {
           className="space-y-6"
           onSubmit={(e) => {
             e.preventDefault();
-            mutation.mutate(obj);
+            handleRegister();
           }}
         >
           <Input
             label={"아이디"}
             type={"text"}
-            logic={(e) => setObj({ ...obj, id: e.target.value })}
+            logic={(e) => setRegObj({ ...regObj, id: e.target.value })}
           />
           <Input
             label={"비밀번호"}
             type={"password"}
-            logic={(e) => setObj({ ...obj, password: e.target.value })}
+            logic={(e) => setRegObj({ ...regObj, password: e.target.value })}
           />
           <Input
             label={"닉네임"}
             type={"text"}
-            logic={(e) => setObj({ ...obj, nickname: e.target.value })}
+            logic={(e) => setRegObj({ ...regObj, nickname: e.target.value })}
           />
-          <Buttons label={"회원가입"} type={"submit"} mutation={mutation} />
+          <Buttons label={"회원가입"} type={"submit"} mutation={isLoading} />
         </form>
       </div>
     </div>

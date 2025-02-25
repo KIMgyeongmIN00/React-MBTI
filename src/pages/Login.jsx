@@ -1,38 +1,11 @@
-import { useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
-import { login } from "../api/auth";
-import useAuthStore from "../utils/auth/useAuthStore";
-import Swal from "sweetalert2";
-import { useMutation } from "@tanstack/react-query";
 import Input from "../components/commons/Input";
 import Buttons from "../components/commons/Buttons";
+import { useLogin } from "../utils/hooks/useLogin";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const { saveUserInfomation } = useAuthStore();
-  const [loginObj, setLoginObj] = useState({ id: "", password: "" });
-  const location = useLocation();
   const navigate = useNavigate();
-
-  const mutation = useMutation({
-    mutationFn: login,
-    onSuccess: (response) => {
-      saveUserInfomation(response);
-      Swal.fire({
-        title: "환영합니다!",
-        text: `${response.nickname}님 어서오세요!`,
-        icon: "success",
-      });
-      const redirectTo = location.state?.from?.pathname || "/";
-      navigate(redirectTo, { replace: true });
-    },
-    onError: () => {
-      Swal.fire({
-        title: "로그인 실패",
-        text: `다시 시도 하세요`,
-        icon: "error",
-      });
-    },
-  });
+  const { loginObj, setLoginObj, handleLogin, isLoading } = useLogin();
 
   return (
     <div className="min-h-screen flex justify-center bg-gray-50">
@@ -47,7 +20,7 @@ export default function Login() {
           className="space-y-6"
           onSubmit={(e) => {
             e.preventDefault();
-            mutation.mutate(loginObj);
+            handleLogin();
           }}
         >
           <Input
@@ -62,7 +35,7 @@ export default function Login() {
               setLoginObj({ ...loginObj, password: e.target.value })
             }
           />
-          <Buttons label={"로그인"} type={"submit"} mutation={mutation} />
+          <Buttons label={"로그인"} type={"submit"} mutation={isLoading} />
           <button type="button" onClick={() => navigate("/signup")}>
             회원가입하기
           </button>
